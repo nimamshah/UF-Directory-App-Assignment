@@ -27,7 +27,7 @@
                 <th>Building Name</th>
                 <th></th>
               </tr>
-              <tr ng-repeat="listing in listings">
+              <tr class="listing" ng-repeat="listing in listings" ng-click="deleteListing($index)">
                 <td>{{ listing.code }}</td>
                 <td>{{ listing.name }}</td>
               </tr>
@@ -40,6 +40,7 @@
                 --> 
             </table>
           </div>
+          
           <!-- 
 
               Write an HTML form that adds new listings to the directory 
