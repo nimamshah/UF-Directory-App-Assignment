@@ -27,6 +27,10 @@
                 <th>Building Name</th>
                 <th></th>
               </tr>
+              <tr ng-repeat="listing in listings">
+                <td>{{ listing.code }}</td>
+                <td>{{ listing.name }}</td>
+              </tr>
               <!-- 
 
                   Fill in the rest of the table:
